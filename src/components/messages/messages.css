@@ -1,0 +1,71 @@
+.messages {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+/*----MESSAGE-HEADER----*/
+
+.message-header {
+  display: flex;
+  text-transform: uppercase;
+  background-color: #f3f3f3;
+}
+.message-header p {
+  flex: 5;
+}
+.details-btn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+/*----MESSAGE-LIST COMPONENT STYLE----*/
+
+.message-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.left-side {
+  flex: 1;
+}
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  background-color: #68b7ff;
+  color: white;
+}
+.message-list div {
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin: 10px;
+}
+
+/*---- MESSAGE-FORM COMPONENT STYLE----*/
+
+.message-form {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.message-form input {
+  flex: 1;
+  background-color: #f3f3f3;
+  margin: 10px;
+  width: 555px;
+  border: none;
+  outline: none;
+}
+.message-form button {
+  margin: 10px;
+  background-color: #68b7ff;
+  color: white;
+  padding: 16px 34px;
+  border: none;
+}

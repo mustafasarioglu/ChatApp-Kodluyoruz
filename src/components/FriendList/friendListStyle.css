@@ -1,0 +1,53 @@
+/*----SEARCH BAR COMPONENT STYLE----*/
+
+.search-friend {
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+
+/*----FRIENDS COMPONENT STYLE----*/
+.user-list {
+  flex: 1;
+  background-color: #f3f3f3;
+}
+.user-list div {
+  padding: 5;
+  border: 1px solid #f3f3f3;
+  cursor: pointer;
+  background-color: white;
+}
+/* .user-list div:hover {
+  padding: 10px;
+  border: 1px solid #f3f3f3;
+  cursor: pointer;
+  background-color: #dfd5d53f;
+} */
+
+.friend-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+/* .user {
+  flex: 1;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+} */
+.user-info {
+  flex: 4;
+}
+.friends-name-container {
+  display: flex;
+}
+/*----SETTINGS COMPONENT STYLE----*/
+
+.settings {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: flex-end;
+}
