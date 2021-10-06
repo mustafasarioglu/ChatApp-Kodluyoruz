@@ -6,30 +6,57 @@
 
 /*----MESSAGE-HEADER----*/
 
-.message-header {
+.message-header-light {
   display: flex;
-  text-transform: uppercase;
   background-color: #f3f3f3;
+  color: black;
 }
-.message-header p {
-  flex: 5;
+.message-header-dark {
+  display: flex;
+  background-color: #6a6a6a;
+  color: white;
 }
-.details-btn {
+.user-header-light {
+  flex: 4;
+  cursor: pointer;
+}
+.user-header-dark {
+  flex: 4;
+  cursor: pointer;
+}
+
+.details-btn-light {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
 }
+.details-btn-dark {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #6a6a6a;
+}
 
 /*----MESSAGE-LIST COMPONENT STYLE----*/
 
-.message-list {
+.message-list-light {
   flex: 1;
   display: flex;
   flex-direction: column;
   background-color: white;
 }
+.message-list-dark {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #7a7a7a;
+  color: white;
+}
+
 .left-side {
   flex: 1;
 }
@@ -41,20 +68,32 @@
   background-color: #68b7ff;
   color: white;
 }
-.message-list div {
+.user-message-light {
   background-color: #f3f3f3;
   padding: 10px;
-  margin: 10px;
+  margin: 8px;
+}
+.user-message-dark {
+  background-color: #515151;
+
+  padding: 10px;
+  margin: 8px;
+  color: #fbfbfb;
 }
 
 /*---- MESSAGE-FORM COMPONENT STYLE----*/
 
-.message-form {
+.message-form-light {
   display: flex;
   flex-direction: row;
   background-color: white;
 }
-.message-form input {
+.message-form-dark {
+  display: flex;
+  flex-direction: row;
+  background-color: #7a7a7a;
+}
+.message-form-light input {
   flex: 1;
   background-color: #f3f3f3;
   margin: 10px;
@@ -62,7 +101,22 @@
   border: none;
   outline: none;
 }
-.message-form button {
+.message-form-dark input {
+  flex: 1;
+  background-color: #f3f3f3;
+  margin: 10px;
+  width: 555px;
+  border: none;
+  outline: none;
+}
+.message-form-light > button {
+  margin: 10px;
+  background-color: #68b7ff;
+  color: white;
+  padding: 16px 34px;
+  border: none;
+}
+.message-form-dark > button {
   margin: 10px;
   background-color: #68b7ff;
   color: white;

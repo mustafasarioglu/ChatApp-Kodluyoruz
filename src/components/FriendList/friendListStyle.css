@@ -1,14 +1,38 @@
 /*----SEARCH BAR COMPONENT STYLE----*/
 
-.search-friend {
+.search-friend-light {
   background-color: #f3f3f3;
   padding: 20px;
 }
+.search-friend-dark {
+  background-color: #6a6a6a;
+  padding: 20px;
+}
+.search-btn-light {
+  padding: 8px;
+  outline: none;
+  border: none;
+  background-color: white;
+}
+.search-btn-dark {
+  padding: 8px;
+  outline: none;
+  border: none;
+  background-color: #7a7a7a;
+  color: white;
+}
+::placeholder {
+  color: #b9b6b6;
+}
 
 /*----FRIENDS COMPONENT STYLE----*/
-.user-list {
+.user-list-light {
   flex: 1;
   background-color: #f3f3f3;
+}
+.user-list-dark {
+  flex: 1;
+  background-color: #6a6a6a;
 }
 .user-list div {
   padding: 5;
@@ -28,26 +52,51 @@
   display: flex;
   flex-direction: column;
 }
-/* .user {
-  flex: 1;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-} */
-.user-info {
+
+.user-info-light {
+  padding: 16px;
   flex: 4;
+  background-color: white;
+  border: 1px solid #f3f3f3;
 }
-.friends-name-container {
+.user-info-dark {
+  padding: 16px;
+  flex: 4;
+  background-color: #7a7a7a;
+  border: 1px solid #6a6a6a;
+  color: white;
+}
+.friends-name-container-light {
   display: flex;
+  cursor: pointer;
 }
+.friends-name-container-light :hover {
+  background-color: rgba(207, 204, 204, 0.952);
+}
+.friends-name-container-dark {
+  display: flex;
+  cursor: pointer;
+}
+.friends-name-container-dark:hover {
+  background-color: white;
+}
+
 /*----SETTINGS COMPONENT STYLE----*/
 
-.settings {
+.settings-light {
   background-color: #f3f3f3;
   display: flex;
   justify-content: flex-end;
+}
+.settings-dark {
+  background-color: #6a6a6a;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-light {
+  background-color: #d6d6d6;
+}
+.btn-dark {
+  background-color: #7a7a7a;
+  color: white;
 }

@@ -1,18 +1,37 @@
 body {
   font-family: inherit;
 }
+.login-text-light {
+  color: black;
+  font-size: 14px;
+}
+.login-text-dark {
+  color: white;
+  font-size: 14px;
+}
 
-.container {
+.container-light {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
   justify-content: center;
 }
-.container p {
+.container-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background-color: #6a6a6a;
+}
+.container-light p {
   margin: 8px;
 }
-.container p input {
+.container-dark p {
+  margin: 8px;
+}
+.container-light p input {
   background-color: #f3f3f3;
   padding: 10px;
 
@@ -20,6 +39,18 @@ body {
   border: none;
   outline: none;
   box-sizing: border-box;
+}
+.container-dark p input {
+  background-color: #7a7a7a;
+  padding: 10px;
+  color: white;
+  width: 250px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+::placeholder {
+  color: #9a9a9a;
 }
 
 .btn-login {

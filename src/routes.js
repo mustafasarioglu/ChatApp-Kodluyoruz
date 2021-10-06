@@ -19,7 +19,7 @@ function Routes() {
          <Route path="/chat" exact>
            <Chat />
          </Route>
-         <Route path="/userdetails" exact>
+         <Route path="/user/:userid/details" exact>
            <Userdetails />
 
          </Route>

@@ -8,8 +8,16 @@ import ThemeContext,{themes} from './context/ThemeContext';
 function App() {
 
   const [user, setUser] = useState(null);
-  const [selectedUser, setselectedUser] = useState(null)
-  const [searchTerm,setSearchTerm] = useState("")
+  const [selectedUser, setselectedUser] = useState(null);
+  const [searchTerm,setSearchTerm] = useState("");
+  
+  const [theme, setTheme] = useState("light");
+  const themeChanger = () => {
+      theme === "light" ? setTheme("dark") : setTheme("light")
+    };
+   
+ 
+  
   
   
   const selectUser = (userId) => {
@@ -42,21 +50,35 @@ function App() {
   }, []);
 
   return (
-    <UserContext.Provider value={{
-      user,
-      userList: mockUsers.users,
-      selectedUser,
-      login,
-      logout,
-      selectUser,
-      searchTerm,
-      setSearchTerm,
-    }}>
+    
 
-      <Routes />
-    </UserContext.Provider>
-    
-    
+    <ThemeContext.Provider value={{
+
+      theme,
+      setTheme,
+      themeChanger,
+    }
+      
+    }>
+        <UserContext.Provider value={{
+                  user,
+                  userList: mockUsers.users,
+                  selectedUser,
+                  login,
+                  logout,
+                  selectUser,
+                  searchTerm,
+                  setSearchTerm,
+                }}>
+
+                  <Routes />
+          </UserContext.Provider>
+            
+
+
+    </ThemeContext.Provider>
+        
+  
   )
 }
 
