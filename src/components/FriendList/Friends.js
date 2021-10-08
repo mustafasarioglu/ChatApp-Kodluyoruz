@@ -22,6 +22,7 @@ function Friends () {
                     <div className={theme == "light" ? "user-info-light" :"user-info-dark"}>
                         <CgProfile />
                         {`                  ${user.first_name} ${user.last_name}`}
+                        <p></p>
                         
                     </div>
                     

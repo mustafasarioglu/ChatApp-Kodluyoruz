@@ -2,6 +2,7 @@
   flex: 4;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 /*----MESSAGE-HEADER----*/
@@ -45,10 +46,12 @@
 
 .message-list-light {
   flex: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: white;
 }
+
 .message-list-dark {
   flex: 1;
   display: flex;
@@ -69,16 +72,27 @@
   color: white;
 }
 .user-message-light {
+  display: flex;
+  justify-content: flex-start;
   background-color: #f3f3f3;
   padding: 10px;
-  margin: 8px;
+  margin: 16px 8px 4px 16px;
 }
 .user-message-dark {
+  display: flex;
   background-color: #515151;
-
   padding: 10px;
-  margin: 8px;
   color: #fbfbfb;
+  margin: 16px 8px 4px 16px;
+}
+.from-me {
+  max-width: 100%;
+  justify-content: flex-end;
+  background-color: #68b7ff;
+  color: white;
+}
+.message {
+  max-width: 50%;
 }
 
 /*---- MESSAGE-FORM COMPONENT STYLE----*/

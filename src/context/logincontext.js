@@ -5,6 +5,7 @@ const UserContext = React.createContext({
     login: () => {},
     logout:() => {},
     searchTerm:"",
+    handleSendNewMessage: ()=>{},
     
 
 })
