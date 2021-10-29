@@ -9,7 +9,7 @@ function Routes() {
     const {user} = useLogin();
     return (
       <Router>
-     
+      <Redirect to="/login" />
         
        <Switch>
          
